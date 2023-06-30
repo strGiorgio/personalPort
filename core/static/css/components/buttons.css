@@ -1,0 +1,16 @@
+.welcome-button {
+    position: absolute;
+    background-color: var(--color-yellow-2);
+    min-width: 400px;
+    min-height: 150px;  
+    border-radius: 100px;
+    box-shadow: 5px 5px var(--color-yellow-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-button:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+}
