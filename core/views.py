@@ -12,3 +12,14 @@ class IndexView(TemplateView):
         context['title'] = 'Making great things!'
 
         return context
+
+
+class WelcomeScreen(TemplateView):
+    template_name = 'welcome-screen.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(WelcomeScreen, self).get_context_data(**kwargs)
+
+        context['title'] = 'Welcome!'
+        return context
+
