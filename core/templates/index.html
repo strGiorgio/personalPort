@@ -6,8 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
 
+    <!--FONTS-->
+    <link href="https://fonts.cdnfonts.com/css/thegoodmonolith" rel="stylesheet">
+                
+    <!--CSS-->
     <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/components/variables.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/texts.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/buttons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/imgs.css'%}">
 
     <link rel="stylesheet" href="{% static 'css/components/section-main.css' %}">
 
@@ -15,7 +23,8 @@
 </head>
 <body>
     <!--INCLUDES-->
-    {% include 'presentation.html' %}
+    {% include 'logo.html' %}
+    {% include 'main.html' %}
 </body>
 </html>
 

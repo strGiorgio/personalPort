@@ -16,20 +16,33 @@
     <link rel="stylesheet" href="{% static 'css/components/texts.css' %}">
     <link rel="stylesheet" href="{% static 'css/components/buttons.css' %}">
     <link rel="stylesheet" href="{% static 'css/components/imgs.css'%}">
-    
+
     <link rel="stylesheet" href="{% static 'css/components/section-main.css' %}">
 
     <link rel="stylesheet" href="{% static 'css/sections/section-presentation.css' %}">
 
 </head>
 <body>
+
+    {% include 'logo.html' %}
+    
     <section class="section-main section-presentation">
-
-        <div class="wrapoper-lgo">
-            <img class="img-logo-png" src="{% static 'imgs/logoSemFundo.png' %}" alt="">
-        </div>
-
+        <div class="container"></div>
         <a class="text-title welcome-button" href="{% url 'index' %}">WELCOME</a>
     </section>
+
+    <script>
+        btn = document.querySelector('.welcome-button');
+        bg = document.querySelector('.container');
+        
+        ///funcão para detectar ação de entrar e sair do mouse em relação ao elemento btn
+        btn.onmouseenter = function (){
+            bg.style = 'filter: blur(5px)'
+        }
+
+        btn.onmouseout = function (){
+            bg.style = 'filter: blur(0)'
+        }
+    </script>
 </body>
 </html>
