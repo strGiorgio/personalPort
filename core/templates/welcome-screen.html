@@ -17,16 +17,16 @@
     <link rel="stylesheet" href="{% static 'css/components/buttons.css' %}">
     <link rel="stylesheet" href="{% static 'css/components/imgs.css'%}">
 
-    <link rel="stylesheet" href="{% static 'css/components/section-main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/components/section-primary.css' %}">
 
-    <link rel="stylesheet" href="{% static 'css/sections/section-presentation.css' %}">
+    <link rel="stylesheet" href="{% static 'css/sections/section-welcome.css' %}">
 
 </head>
 <body>
 
     {% include 'logo.html' %}
     
-    <section class="section-main section-presentation">
+    <section class="section-primary section-welcome">
         <div class="container"></div>
         <a class="text-title welcome-button" href="{% url 'index' %}">WELCOME</a>
     </section>

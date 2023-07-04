@@ -1,11 +1,11 @@
-.section-presentation {
+.section-welcome {
     background-color: var(--color-purple-1);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.section-presentation .container {
+.section-welcome .container {
     background-color: #fff;
     width: 100%;
     max-width: 1920px;
