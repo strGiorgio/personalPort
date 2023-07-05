@@ -1,0 +1,29 @@
+.section-main {
+    background-color: #0d0d0d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-main .background-primary {
+    animation: Grow 1s linear;
+}
+
+@keyframes Grow {
+    0% {
+        
+        width: 10%;
+        height: 10%;
+    }
+
+    50% {
+        width: 50%;
+        height: 50%;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
