@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="{% static 'css/components/texts.css' %}">
     <link rel="stylesheet" href="{% static 'css/components/buttons.css' %}">
     <link rel="stylesheet" href="{% static 'css/components/imgs.css'%}">
-
+    <link rel="stylesheet" href="{% static 'css/components/background.css' %}">
     <link rel="stylesheet" href="{% static 'css/components/section-primary.css' %}">
 
     <link rel="stylesheet" href="{% static 'css/sections/section-welcome.css' %}">
@@ -27,13 +27,13 @@
     {% include 'logo.html' %}
     
     <section class="section-primary section-welcome">
-        <div class="container"></div>
+        <div class="background-primary"></div>
         <a class="text-title welcome-button" href="{% url 'index' %}">WELCOME</a>
     </section>
 
     <script>
         btn = document.querySelector('.welcome-button');
-        bg = document.querySelector('.container');
+        bg = document.querySelector('.background-primary');
         
         ///funcão para detectar ação de entrar e sair do mouse em relação ao elemento btn
         btn.onmouseenter = function (){
