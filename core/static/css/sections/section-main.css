@@ -7,6 +7,28 @@
     max-height: 1080px;
 }
 
+.section-main .main-header {
+    display: flex;
+    justify-content: end;
+    padding-top: 10px;
+}
+
+.section-main .main-header div {
+    background-color: rgba(218, 217, 217, 0.5);
+    width: 20%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-main .main-header div a:hover {
+    padding: 5px 20px;
+    background-color: #c4c4c4;
+    border-radius: 5px;
+    
+}
+
 .wrapper-menu {
     width: 70%;
     max-width: 1920px;
