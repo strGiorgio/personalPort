@@ -1,5 +1,17 @@
+@font-face {
+    font-family: 'EA';
+    src: url('../../fonts/EASPORTS15.ttf');
+}
+.text-font {
+    font-family: 'EA', sans-serif;
+    text-decoration: none;
+}
+
 .text-title {
-    font-family: 'TheGoodMonolith', sans-serif;
-    font-weight: 500;
     font-size: 5rem;
+}
+
+.text-footer {
+    font-size: 2.5rem;
+    color: #fff;
 }
