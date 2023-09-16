@@ -10,6 +10,7 @@ class IndexView(TemplateView):
         context = super(IndexView, self).get_context_data(**kwargs)
 
         context['title'] = 'Making great things!'
+        context['user'] = 'Giorgio'
 
         return context
 
@@ -21,5 +22,6 @@ class WelcomeScreen(TemplateView):
         context = super(WelcomeScreen, self).get_context_data(**kwargs)
 
         context['title'] = 'Welcome!'
+        
         return context
 
