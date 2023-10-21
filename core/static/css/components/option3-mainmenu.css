@@ -1,3 +1,17 @@
+.item-3 .projects  {
+    background-image: url("../../imgs/background-item1.png");
+    background-size: cover;
+    width: 100%;
+}
+
+.wrapper-arrows {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 10;
+}
+
 .item-3 .arrow {
     width: 30px;
     height: 30px;
