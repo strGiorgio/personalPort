@@ -1,16 +1,24 @@
-.item-3 .projects  {
-    background-image: url("../../imgs/background-item1.png");
+.item-3 .projectOne  {
+    background-image: url("../../imgs/imgProjects/projetoDoe.png");
     background-size: cover;
     width: 100%;
+    display: flex;
 }
 
-.wrapper-arrows {
-    display: flex;
+.item-3 .projectTwo  {
+    background-image: url("../../imgs/imgProjects/projetoPymob.png");
+    background-size: cover;
     width: 100%;
-    justify-content: space-between;
-    padding: 20px;
-    z-index: 10;
+    display: none;
 }
+
+.item-3 .projectThree  {
+    background-image: url("../../imgs/imgProjects/projectGitHub.png");
+    background-size: cover;
+    width: 100%;
+    display: none;
+}
+
 
 .item-3 .arrow {
     width: 30px;
@@ -19,7 +27,8 @@
     border-left: 5px solid white;
     border-radius: 10%;
     transition: .1s ease-in-out;
-    align-self: center;
+    position: absolute;
+    top: 45%;
 }
 
 .item-3 .arrow:hover {
@@ -28,10 +37,12 @@
 
 .item-3 .arrow-l {
     transform: rotate(-45deg);
+    left: 20px;
 }
 
 .item-3 .arrow-r {
     transform: rotate(135deg);
+    right: 20px;
 }
 .item-3 {
     opacity: 100;
