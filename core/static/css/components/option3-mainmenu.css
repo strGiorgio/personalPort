@@ -38,12 +38,73 @@
     }
 }
 
+
+
 .item-3 .projectTwo  {
     background-image: url("../../imgs/imgProjects/projetoPymob.png");
     background-size: cover;
     width: 100%;
     display: none;
+    flex-direction: column;
+    overflow: hidden;
 }
+
+.item-3 .projectTwo .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(240, 248, 255, 0.459);
+    width: 70%;
+    margin: 30px 0px;
+    padding: 25px;
+    animation: slideToRight 1s ease-in-out;
+}
+
+.item-3 .projectTwo .container2 {
+    align-self: flex-end;
+    animation: slideToLeft 1s ease-in-out;
+}
+
+.item-3 .projectTwo .container h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.item-3 .projectTwo .container p {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.item-3 .projectTwo .container a {
+    margin: 5px;
+    font-size: 1.3rem;
+    align-self: flex-end;
+}
+
+@keyframes slideToRight {
+    from {
+        transform: translateX(-250px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideToLeft {
+    from {
+        transform: translateX(250px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+
+
+
+
+
 
 .item-3 .projectThree  {
     background-image: url("../../imgs/imgProjects/projectGitHub.png");
