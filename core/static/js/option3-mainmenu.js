@@ -44,3 +44,16 @@ function changeProject() {
         projectThree.style.display = "flex";
     }
 }
+
+
+function redirect_projectOne() {
+    document.location.href = "https://strgiorgio.github.io/ProjetoDoe/";
+}
+
+function redirect_projectTwo() {
+    document.location.href = "https://github.com/strGiorgio/PyMob2.1";
+}
+
+function redirect_projectThree() {
+    document.location.href = "https://github.com/strgiorgio";
+}
