@@ -1,0 +1,83 @@
+.item-1 {
+    background-color: #ffffff11;
+    opacity: 100%;
+    overflow: hidden;
+}
+
+.item-1 .main-title {
+    font-size: 7rem;
+    animation: gradient 5s  ease-in-out infinite;
+
+    background: conic-gradient(
+    var(--color-purple-1) 16.666%, 
+    var(--color-purple-2) 16.666%, 
+    var(--color-purple-3) 33.333%, 
+    var(--color-purple-2) 33.333%, 
+    var(--color-purple-1) 50%, 
+    var(--color-purple-2) 50%, 
+    var(--color-purple-1) 66.666%, 
+    var(--color-purple-2) 83.333%, 
+    var(--color-purple-2) 83.333%
+    );
+    
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    
+}
+
+.item-1 .second-title {
+    font-size: 2.5rem;
+    color: var(--color-blue-1);
+
+    background: conic-gradient(
+    var(--color-blue-1) 16.666%, 
+    var(--color-blue-2) 16.666%, 
+    var(--color-blue-3) 33.333%, 
+    var(--color-blue-2) 33.333%, 
+    var(--color-blue-1) 50%, 
+    var(--color-blue-2) 50%, 
+    var(--color-blue-1) 66.666%, 
+    var(--color-blue-2) 83.333%, 
+    var(--color-blue-2) 83.333%
+    );
+    
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+
+    animation: gradient 5s  ease-in-out infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-size: 50%;
+        background-position: 0 1rem;
+
+    }
+
+    50% {
+        background-size: 30%;
+        background-position: -9rem 1rem;
+    }
+
+    100% {
+        background-size: 50%;
+        background-position: 0 1rem;
+    }
+}
+
+@keyframes SslideToLeft {
+    from {
+        transform: translateX(250px);
+    }
+
+    to {
+        transform: translateX(-450px);
+    }
+}
+
