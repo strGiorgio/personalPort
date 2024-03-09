@@ -1,5 +1,5 @@
 .item-1 {
-    background-color: rgba(255, 255, 255, 0.651);
+    background-color: #fff);
     opacity: 100%;
     overflow: hidden;
     padding: 5px;
@@ -86,7 +86,66 @@
     }
 }
 
-.item-1 p {
-    color: white;
-    font-size: 1.5rem;
+.item-1 .text-anim {
+    font-size: 2.3rem;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.item-1 .text-anim span {
+    position: relative;
+}
+
+.item-1 .text-anim span::before {
+    content: "";
+    color: var(--color-purple-1);
+    animation: letters 20s infinite;
+}
+
+.item-1 .text-anim span::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid var(--color-purple-3);
+    right: -5px;
+    animation: pointer 0.9s infinite, typing 20s steps(15) infinite;
+    width: calc(100% + 5px);
+    background-color: #fff;
+}
+
+@keyframes typing {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+
+    5%, 20%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 5px);
+    }
+
+
+}
+
+@keyframes pointer {
+    0% {
+        border-left: 2px solid #fff
+    }
+}
+
+@keyframes letters {
+    0%, 20% {
+        content: "DJANGO";
+    }
+    21%, 40% {
+        content: "PYTHON";
+    }
+    41%, 60% {
+        content: "HTML E CSS";
+    }
+    61%, 80% {
+        content: "JAVASCRIPT";
+    }
+    81%, 100% {
+        content: "ENTRE OUTROS...";
+    }
+    
 }
